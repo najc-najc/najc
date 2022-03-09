@@ -1,0 +1,263 @@
+najc@najc MINGW64 /c/najc
+$ git init
+Initialized empty Git repository in C:/najc/.git/
+
+najc@najc MINGW64 /c/najc (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+najc@najc MINGW64 /c/najc (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        FileStreamproyecto.sql
+        Filetableproyecto.sql
+        Particiones_proyecto.sql
+        SALVAMENTO.sql
+        Salvamento_Contenida.sql
+        Salvamento_Contenida_probe.sql
+        TemporalTables_proyecto.sql
+        script_a_sql.ddl
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+najc@najc MINGW64 /c/najc (master)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+najc@najc MINGW64 /c/najc (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        FileStreamproyecto.sql
+        Filetableproyecto.sql
+        Particiones_proyecto.sql
+        SALVAMENTO.sql
+        Salvamento_Contenida.sql
+        Salvamento_Contenida_probe.sql
+        TemporalTables_proyecto.sql
+        script_a_sql.ddl
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+najc@najc MINGW64 /c/najc (master)
+$ git add .
+
+najc@najc MINGW64 /c/najc (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   FileStreamproyecto.sql
+        new file:   Filetableproyecto.sql
+        new file:   Particiones_proyecto.sql
+        new file:   SALVAMENTO.sql
+        new file:   Salvamento_Contenida.sql
+        new file:   Salvamento_Contenida_probe.sql
+        new file:   TemporalTables_proyecto.sql
+        new file:   script_a_sql.ddl
+
+
+najc@najc MINGW64 /c/najc (master)
+$
+najc@najc MINGW64 /c/najc (master)
+$ git commit -m "Se agregan los scripts del Proyecto"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'najc@najc.(none)')
+
+najc@najc MINGW64 /c/najc (master)
+$ git config --global user.email jcesar_nava@hotmail.com
+
+najc@najc MINGW64 /c/najc (master)
+$ git config --global user.name najc-najc
+
+najc@najc MINGW64 /c/najc (master)
+$ git commit
+Aborting commit due to empty commit message.
+
+--se abrió un editor de texto, esto es debido a que nos hace falta un mensaje para el commit
+--para salir del editor de texto escribimos :q! y pulsamos enter
+
+najc@najc MINGW64 /c/najc (master)
+$ git commit -m "Se agregan los scripts del Proyecto"
+[master (root-commit) 583a250] Se agregan los scripts del Proyecto
+ 8 files changed, 1925 insertions(+)
+ create mode 100644 FileStreamproyecto.sql
+ create mode 100644 Filetableproyecto.sql
+ create mode 100644 Particiones_proyecto.sql
+ create mode 100644 SALVAMENTO.sql
+ create mode 100644 Salvamento_Contenida.sql
+ create mode 100644 Salvamento_Contenida_probe.sql
+ create mode 100644 TemporalTables_proyecto.sql
+ create mode 100644 script_a_sql.ddl
+
+najc@najc MINGW64 /c/najc (master)
+$
+najc@najc MINGW64 /c/najc (master)
+$ git branch -M main
+
+najc@najc MINGW64 /c/najc (main)
+$ git remote add origin https://github.com/najc-najc/najc.git
+
+najc@najc MINGW64 /c/najc (main)
+$ git push -u origin main
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (10/10), 10.81 KiB | 2.16 MiB/s, done.
+Total 10 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/najc-najc/najc.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+najc@najc MINGW64 /c/najc (main)
+$ git log
+commit 583a2503ff524ff81011be3b67dc0c195548deb1 (HEAD -> main, origin/main)
+Author: najc-najc <jcesar_nava@hotmail.com>
+Date:   Tue Mar 8 19:28:31 2022 +0100
+
+    Se agregan los scripts del Proyecto
+
+najc@najc MINGW64 /c/najc (main)
+$
+najc@najc MINGW64 /c/najc (main)
+$ git branch
+* main
+najc@najc MINGW64 /c/najc (main)
+$ git branch prueba
+
+najc@najc MINGW64 /c/najc (main)
+$ git chekout prueba
+git: 'chekout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+najc@najc MINGW64 /c/najc (main)
+$ git checkout prueba
+Switched to branch 'prueba'
+
+najc@najc MINGW64 /c/najc (prueba)
+$ git branch
+  main
+* prueba
+
+najc@najc MINGW64 /c/najc (prueba)
+$ git branch main
+fatal: a branch named 'main' already exists
+
+najc@najc MINGW64 /c/najc (prueba)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+najc@najc MINGW64 /c/najc (main)
+$ git log --oneline --decorate
+583a250 (HEAD -> main, origin/main, prueba) Se agregan los scripts del Proyecto
+
+najc@najc MINGW64 /c/najc (main)
+$ git revert 583a250
+[main f8ef320] Revert "Se agregan los scripts del Proyecto"
+ 8 files changed, 1925 deletions(-)
+ delete mode 100644 FileStreamproyecto.sql
+ delete mode 100644 Filetableproyecto.sql
+ delete mode 100644 Particiones_proyecto.sql
+ delete mode 100644 SALVAMENTO.sql
+ delete mode 100644 Salvamento_Contenida.sql
+ delete mode 100644 Salvamento_Contenida_probe.sql
+ delete mode 100644 TemporalTables_proyecto.sql
+ delete mode 100644 script_a_sql.ddl
+
+--para salir del documento escribir :wq
+
+
+najc@najc MINGW64 /c/najc (main)
+$ git add .
+warning: LF will be replaced by CRLF in Proyecto_Salvamento/salvamento.dmd.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in Proyecto_Salvamento/salvamento/ChangeRequests.local.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in Proyecto_Salvamento/salvamento/businessinfo/Business Information.xml.
+...
+...
+...
+...
+
+
+najc@najc MINGW64 /c/najc (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (1/1), done.
+Writing objects: 100% (2/2), 244 bytes | 244.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/najc-najc/najc.git
+   583a250..f8ef320  main -> main
+branch 'main' set up to track 'origin/main'.
+
+--como no hemos echo commit, solo se suben los cambios 
+
+najc@najc MINGW64 /c/najc (main)
+$ git commit -m "Se agregan las carpetas con archivos"
+[main d577825] Se agregan las carpetas con archivos
+ 93 files changed, 6559 insertions(+)
+ create mode 100644 Algunos_Scripts_clase/1.En_clase.sql
+ create mode 100644 Algunos_Scripts_clase/2.En_clase.sql
+ create mode 100644 Algunos_Scripts_clase/3.En_clase.sql
+...
+...
+...
+
+najc@najc MINGW64 /c/najc (main)
+$ git push -u origin main
+Enumerating objects: 120, done.
+Counting objects: 100% (120/120), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (113/113), done.
+Writing objects: 100% (119/119), 69.62 KiB | 2.11 MiB/s, done.
+Total 119 (delta 41), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (41/41), done.
+To https://github.com/najc-najc/najc.git
+   f8ef320..d577825  main -> main
+branch 'main' set up to track 'origin/main'.
+
+--ahora si que se han subido los cambios
+
+najc@najc MINGW64 /c/najc (main)
+$
+
+najc@najc MINGW64 /c/najc (main)
+$
+
