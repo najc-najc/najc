@@ -261,3 +261,44 @@ $
 najc@najc MINGW64 /c/najc (main)
 $
 
+najc@najc MINGW64 /c/najc (main)
+$ git log
+commit d5778255e36d9ebfa275978650f3b4c4d2086ec7 (HEAD -> main, origin/main)
+Author: najc-najc <jcesar_nava@hotmail.com>
+Date:   Wed Mar 9 21:06:50 2022 +0100
+
+    Se agregan las carpetas con archivos
+
+commit f8ef3209166cbcc3b4979e31ed5bc0db6835f58b
+Author: najc-najc <jcesar_nava@hotmail.com>
+Date:   Wed Mar 9 20:57:17 2022 +0100
+
+    Revert "Se agregan los scripts del Proyecto"
+
+    This reverts commit 583a2503ff524ff81011be3b67dc0c195548deb1.
+
+commit 583a2503ff524ff81011be3b67dc0c195548deb1 (prueba)
+Author: najc-najc <jcesar_nava@hotmail.com>
+Date:   Tue Mar 8 19:28:31 2022 +0100
+
+    Se agregan los scripts del Proyecto
+najc@najc MINGW64 /c/najc (main)
+$
+najc@najc MINGW64 /c/najc (main)
+$ git pull origin main
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 2.64 KiB | 193.00 KiB/s, done.
+From https://github.com/najc-najc/najc
+ * branch            main       -> FETCH_HEAD
+   d577825..f4e6ce6  main       -> origin/main
+Updating d577825..f4e6ce6
+Fast-forward
+ GIT.txt | 263 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 263 insertions(+)
+ create mode 100644 GIT.txt
+
+najc@najc MINGW64 /c/najc (main)
+$
