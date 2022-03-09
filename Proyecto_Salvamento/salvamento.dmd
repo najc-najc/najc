@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="salvamento" id="D5F47E21-9EDF-B186-4563-8D6C74B2E294" version="3.5">
+<createdBy>najc</createdBy>
+<createdTime>2022-01-13 14:42:21 UTC</createdTime>
+<ownerDesignName>salvamento</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>D5F47E21-9EDF-B186-4563-8D6C74B2E294</designId>
+</OSDM_Design>

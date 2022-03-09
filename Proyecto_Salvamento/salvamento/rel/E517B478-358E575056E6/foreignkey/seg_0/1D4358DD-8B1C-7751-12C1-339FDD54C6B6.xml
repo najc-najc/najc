@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="1D4358DD-8B1C-7751-12C1-339FDD54C6B6" containerWithKeyObject="77FDD337-8FEC-96A2-E62C-D6C0E3317CB2" localFKIndex="748C9ECA-330A-A44E-CCCB-B9C94619C49F" name="Provincia_CCAA_FK">
+<createdBy>najc</createdBy>
+<createdTime>2022-03-05 22:37:32 UTC</createdTime>
+<generatorID>AE0FA73D-986C-7F4A-9F9F-05517B7F30D2</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<referredTableLongName>CCAA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>AAD038ED-28EF-DCC5-24D9-82DF315F0193</referredTableID>
+<keyObject>13860F0B-AD4C-B899-1C2E-86E8090DD8EB</keyObject>
+<referredKeyID>13860F0B-AD4C-B899-1C2E-86E8090DD8EB</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_CCAA</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

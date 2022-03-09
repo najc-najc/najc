@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EC4796C5-0693-9828-00BF-61939D84350C" name="Persona_Rescatada">
+<createdBy>najc</createdBy>
+<createdTime>2022-03-05 22:37:31 UTC</createdTime>
+<generatorID>5B215A5F-2423-6DF3-475C-65F05E03453F</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_persona" id="73802F36-4A53-44E1-02CB-E70963A85B07">
+<createdBy>najc</createdBy>
+<createdTime>2022-03-05 22:37:31 UTC</createdTime>
+<generatorID>C6AC71A7-2EDB-B4C2-99F0-D926129B296E</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre" id="8214AFBB-1133-6D61-F038-49B45B92D266">
+<createdBy>najc</createdBy>
+<createdTime>2022-03-05 22:37:31 UTC</createdTime>
+<generatorID>52A7A6F4-EB80-99E1-EF90-9F71616F153C</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Apellido1" id="3E3BAE74-3172-F453-6EDC-C7B9CF5D2C1D">
+<createdBy>najc</createdBy>
+<createdTime>2022-03-05 22:37:31 UTC</createdTime>
+<generatorID>ABC8AB1A-4A18-B890-6842-21FE73B87763</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Apellido2" id="3F33150C-E23B-8C8F-EFD8-8853A2E0138A">
+<createdBy>najc</createdBy>
+<createdTime>2022-03-05 22:37:31 UTC</createdTime>
+<generatorID>79DF87FD-F652-E86B-ADF3-E177940663DD</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nacionalidad" id="846017F7-A555-AAF9-1F56-3036C809B21B">
+<createdBy>najc</createdBy>
+<createdTime>2022-03-05 22:37:31 UTC</createdTime>
+<generatorID>573F8C95-CF8D-101B-76A2-41EC808DAEAA</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8D4EBB4B-2C4C-212B-99EE-1D94CE04579D" name="Persona_Rescatada_PK">
+<createdBy>najc</createdBy>
+<createdTime>2022-03-05 22:37:31 UTC</createdTime>
+<generatorID>2A24E95F-1D0E-9313-E413-7602E5CF1AB6</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="73802F36-4A53-44E1-02CB-E70963A85B07"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E768B404-5F12-B4B2-4E68-24368BB6BBAF" containerWithKeyObject="23A732AA-9BAC-5A2E-68D0-C74B07CEF4CB" localFKIndex="7B4A4BFF-F9FF-71F7-5687-D3A725E4D362" name="Part_act_Actuaciones_FK">
+<createdBy>najc</createdBy>
+<createdTime>2022-03-05 22:37:32 UTC</createdTime>
+<generatorID>910C88E5-0E8A-0DE6-F922-0E3261D35674</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<referredTableLongName>Actuaciones</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>0789189D-2E58-F7CC-AB17-4BD343FA6268</referredTableID>
+<keyObject>C13B6746-19BF-BB7E-0B91-00ABF5ACC0E5</keyObject>
+<referredKeyID>C13B6746-19BF-BB7E-0B91-00ABF5ACC0E5</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_act</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="567D44E7-EEBF-83D1-0279-9A8447D62C8B" name="Localidad">
+<createdBy>najc</createdBy>
+<createdTime>2022-03-05 22:37:31 UTC</createdTime>
+<generatorID>D05FDBD9-87DF-2FF1-E1B9-B147859CA456</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Provincia_id_Prov" id="B45FCA2A-41BE-45A7-B6C2-4BDA228A48D0">
+<createdBy>najc</createdBy>
+<createdTime>2022-03-05 22:37:31 UTC</createdTime>
+<generatorID>8A70AE39-D1E8-65CB-3420-4D80C144DD26</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E88C756E-99C2-FB7F-224C-7AB94A3A0354" referredColumn="FEF7D62F-1DB6-1A9D-8D40-BBFA0AC6F216"/>
+</associations>
+</Column>
+<Column name="id_Loc" id="AB7F9ADD-7E77-CEE3-89A5-A882E9998E43">
+<createdBy>najc</createdBy>
+<createdTime>2022-03-05 22:37:31 UTC</createdTime>
+<generatorID>716065C2-7BFC-FA0B-4B6D-63789A7B774A</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre" id="DBFAA3A4-0FE5-B4DA-830E-A9C9B8DF79E6">
+<createdBy>najc</createdBy>
+<createdTime>2022-03-05 22:37:31 UTC</createdTime>
+<generatorID>F5CDD7DF-920D-508E-867D-EBFFBDD49532</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1EF89CAD-89AD-0C99-BCCA-446D22D0CFB8" name="Localidad_PK">
+<createdBy>najc</createdBy>
+<createdTime>2022-03-05 22:37:31 UTC</createdTime>
+<generatorID>E1E5CEB9-BD33-9370-A2DE-706344133DC5</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AB7F9ADD-7E77-CEE3-89A5-A882E9998E43"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="05E46EA8-8862-737D-DA96-CF31514371DA" name="Localidad_Provincia_FK">
+<createdBy>najc</createdBy>
+<createdTime>2022-03-05 22:37:32 UTC</createdTime>
+<generatorID>2E523E0F-7D96-A4F2-18C9-159A0EB36D47</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B45FCA2A-41BE-45A7-B6C2-4BDA228A48D0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

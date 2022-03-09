@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="23A732AA-9BAC-5A2E-68D0-C74B07CEF4CB" name="Part_act">
+<createdBy>najc</createdBy>
+<createdTime>2022-03-05 22:37:31 UTC</createdTime>
+<generatorID>F51024EF-4A82-C632-9CF9-09AEA13FABB1</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Actuaciones_id_act" id="61143647-46E7-C8D4-AFB7-5240059DD814">
+<createdBy>najc</createdBy>
+<createdTime>2022-03-05 22:37:31 UTC</createdTime>
+<generatorID>090D29F2-FBB4-8FBD-F82C-AF4C7D7DA05B</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E768B404-5F12-B4B2-4E68-24368BB6BBAF" referredColumn="F2A18A3A-6790-2A3D-A977-A435FEEE7BBD"/>
+</associations>
+</Column>
+<Column name="Empleado_id_Personal" id="64E53E25-98E5-5BD3-9D92-672B380A1FCF">
+<createdBy>najc</createdBy>
+<createdTime>2022-03-05 22:37:31 UTC</createdTime>
+<generatorID>C4145282-BE4E-69A8-AD50-EC52DC0FDE66</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A59497E2-3978-EAD0-B1BF-904E9D236DFB" referredColumn="C05AE8ED-6D91-16F1-6C72-735D6B24BFA8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7B4A4BFF-F9FF-71F7-5687-D3A725E4D362" name="Part_act_Actuaciones_FK">
+<createdBy>najc</createdBy>
+<createdTime>2022-03-05 22:37:32 UTC</createdTime>
+<generatorID>910C88E5-0E8A-0DE6-F922-0E3261D35674</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="61143647-46E7-C8D4-AFB7-5240059DD814"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="31D2085E-BD79-072F-2F98-852A881C98AD" name="Part_act_Empleado_FK">
+<createdBy>najc</createdBy>
+<createdTime>2022-03-05 22:37:32 UTC</createdTime>
+<generatorID>F1F80760-6380-59D6-DCDF-A16FCC10C0C0</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="64E53E25-98E5-5BD3-9D92-672B380A1FCF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

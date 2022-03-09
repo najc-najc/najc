@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C4AEE3A6-BE80-D826-093E-F645BC6033A6" name="Material">
+<createdBy>najc</createdBy>
+<createdTime>2022-03-05 22:37:31 UTC</createdTime>
+<generatorID>F76E3173-DC3B-C7CE-EF8B-B9D7650EFB97</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_material" id="4D815A3E-CEFD-B9B0-0CDA-F526E24E94C5">
+<createdBy>najc</createdBy>
+<createdTime>2022-03-05 22:37:31 UTC</createdTime>
+<generatorID>197029D5-CB24-4E91-7A08-1898F1AA6A51</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre_material" id="A8F0A2F1-F792-82CA-1A5D-F3AE2000EF43">
+<createdBy>najc</createdBy>
+<createdTime>2022-03-05 22:37:31 UTC</createdTime>
+<generatorID>04425B41-E8AB-778E-F770-B01CBF198FEE</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cantidad" id="22CCD422-BC92-271B-30AC-F97EB3C23FA3">
+<createdBy>najc</createdBy>
+<createdTime>2022-03-05 22:37:31 UTC</createdTime>
+<generatorID>F556E9A5-D697-884F-C7A4-47C883892C03</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="observaciones" id="7B030217-5C4E-4618-443B-DF1842476F8D">
+<createdBy>najc</createdBy>
+<createdTime>2022-03-05 22:37:31 UTC</createdTime>
+<generatorID>EB73C762-ADB8-F670-A713-4B96BB455EF4</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BF784690-C433-0ED0-8C09-5DCAEC25FBB9" name="Material_PK">
+<createdBy>najc</createdBy>
+<createdTime>2022-03-05 22:37:31 UTC</createdTime>
+<generatorID>F3EC6131-E9CF-AE9F-885A-EE52D890AD4C</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4D815A3E-CEFD-B9B0-0CDA-F526E24E94C5"/>
+<colUsage columnID="22CCD422-BC92-271B-30AC-F97EB3C23FA3"/>
+<colUsage columnID="A8F0A2F1-F792-82CA-1A5D-F3AE2000EF43"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

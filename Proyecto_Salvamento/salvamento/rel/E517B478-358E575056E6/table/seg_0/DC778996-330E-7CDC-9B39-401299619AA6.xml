@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DC778996-330E-7CDC-9B39-401299619AA6" name="Inventario_Veh">
+<createdBy>najc</createdBy>
+<createdTime>2022-03-05 22:37:31 UTC</createdTime>
+<generatorID>7BB94570-1EED-A8F3-6F6A-726D5DF1827F</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Vehiculo_id_Veh" id="83D0481E-867C-6757-8354-BA027AF43156">
+<createdBy>najc</createdBy>
+<createdTime>2022-03-05 22:37:31 UTC</createdTime>
+<generatorID>946BE03F-4683-974F-B543-5C133555D6A6</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="30BA774D-C8B0-362F-7633-6B7B56818887" referredColumn="AE064242-2834-33C4-7D60-F6DF9FD92FA3"/>
+</associations>
+</Column>
+<Column name="Material_id_material" id="46424FBC-413E-7700-B138-7CE6436D5448">
+<createdBy>najc</createdBy>
+<createdTime>2022-03-05 22:37:31 UTC</createdTime>
+<generatorID>8E586002-8B38-95EA-8E79-EB7C20062F22</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="70F8391B-CCE0-2FF5-4CB0-5F6962382B7F" referredColumn="4D815A3E-CEFD-B9B0-0CDA-F526E24E94C5"/>
+</associations>
+</Column>
+<Column name="fecha" id="F4F8B722-23E3-9916-DBDD-CD8249EC4607">
+<createdBy>najc</createdBy>
+<createdTime>2022-03-05 22:37:31 UTC</createdTime>
+<generatorID>5F58C559-45D3-4378-C7F3-1731297A5C09</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Material_Cantidad" id="28251F27-0E98-187D-36D2-A39DE28E149F">
+<createdBy>najc</createdBy>
+<createdTime>2022-03-05 22:37:31 UTC</createdTime>
+<generatorID>11C4D744-F346-2B9D-C2A2-BDE613AA2FA0</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="70F8391B-CCE0-2FF5-4CB0-5F6962382B7F" referredColumn="22CCD422-BC92-271B-30AC-F97EB3C23FA3"/>
+</associations>
+</Column>
+<Column name="Material_Nombre_material" id="FEA9E9DA-129A-A8AA-7F7D-08E4FDC860D0">
+<createdBy>najc</createdBy>
+<createdTime>2022-03-05 22:37:31 UTC</createdTime>
+<generatorID>86AF6721-E184-74CC-BB5E-B209CC3CF44B</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="70F8391B-CCE0-2FF5-4CB0-5F6962382B7F" referredColumn="A8F0A2F1-F792-82CA-1A5D-F3AE2000EF43"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="30A4C6E0-EE64-F240-24F6-88A31C7150B1" name="Inventario_Veh_PK">
+<createdBy>najc</createdBy>
+<createdTime>2022-03-05 22:37:31 UTC</createdTime>
+<generatorID>8CD9458F-48D2-3338-69AE-E1992A7154E9</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F4F8B722-23E3-9916-DBDD-CD8249EC4607"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="41C545D9-A82B-87FA-BD21-BEFE0C9F12BC" name="Inventario_Veh__IDX">
+<createdBy>najc</createdBy>
+<createdTime>2022-03-05 22:37:32 UTC</createdTime>
+<ownerDesignName>salvamento</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>16D5EDFB-12A0-DA2B-0BF4-E16055EA61FF</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="83D0481E-867C-6757-8354-BA027AF43156"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="683C1625-EF2D-4945-BED3-A8D91C0E22CD" name="Inventario_Veh_Vehiculo_FK">
+<createdBy>najc</createdBy>
+<createdTime>2022-03-05 22:37:32 UTC</createdTime>
+<generatorID>16D5EDFB-12A0-DA2B-0BF4-E16055EA61FF</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="83D0481E-867C-6757-8354-BA027AF43156"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D8C34222-73C5-F1B0-C324-294178BF9D20" name="Inventario_Veh_Material_FK">
+<createdBy>najc</createdBy>
+<createdTime>2022-03-05 22:37:32 UTC</createdTime>
+<generatorID>F7F9F4FB-A568-E267-B28A-B897F94B6EC9</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="46424FBC-413E-7700-B138-7CE6436D5448"/>
+<colUsage columnID="28251F27-0E98-187D-36D2-A39DE28E149F"/>
+<colUsage columnID="FEA9E9DA-129A-A8AA-7F7D-08E4FDC860D0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D4A73C08-B37E-CEE8-EDC5-C488D1750593" containerWithKeyObject="0789189D-2E58-F7CC-AB17-4BD343FA6268" localFKIndex="D7133739-9C8F-BB1E-20AB-9A24EEFA5B06" name="Actuaciones_Localidad_FK">
+<createdBy>najc</createdBy>
+<createdTime>2022-03-05 22:37:32 UTC</createdTime>
+<generatorID>1BB36594-36A6-19F5-4CBD-E7E721EDA02C</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<referredTableLongName>Localidad</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>567D44E7-EEBF-83D1-0279-9A8447D62C8B</referredTableID>
+<keyObject>1EF89CAD-89AD-0C99-BCCA-446D22D0CFB8</keyObject>
+<referredKeyID>1EF89CAD-89AD-0C99-BCCA-446D22D0CFB8</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_Loc</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

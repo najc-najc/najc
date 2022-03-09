@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="34827BEF-2CBD-E300-C0BD-9D34854579DF" name="Provincia">
+<createdBy>najc</createdBy>
+<createdTime>2022-01-13 14:55:41 UTC</createdTime>
+<ownerDesignName>salvamento</ownerDesignName>
+<engineerTo>
+<item key="27331082-5BC2-04D2-C68C-D5328B55F015" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_CCAA" id="6B3BC0A6-129F-D0DF-480C-F9F3F3315908">
+<createdBy>najc</createdBy>
+<createdTime>2022-01-13 15:08:25 UTC</createdTime>
+<generatorID>AE0FA73D-986C-7F4A-9F9F-05517B7F30D2</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<engineerTo>
+<item key="27331082-5BC2-04D2-C68C-D5328B55F015" value="true"/>
+</engineerTo>
+<referedAttribute>5027984C-FE70-6F9C-9FA4-6E6FAA457891</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_Prov" id="BF7F0428-9784-A80A-996E-951EBE662666">
+<createdBy>najc</createdBy>
+<createdTime>2022-01-13 15:08:41 UTC</createdTime>
+<ownerDesignName>salvamento</ownerDesignName>
+<engineerTo>
+<item key="27331082-5BC2-04D2-C68C-D5328B55F015" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre" id="E252393A-1613-ADD3-BF90-DF55EC163EAC">
+<createdBy>najc</createdBy>
+<createdTime>2022-01-13 15:09:02 UTC</createdTime>
+<ownerDesignName>salvamento</ownerDesignName>
+<engineerTo>
+<item key="27331082-5BC2-04D2-C68C-D5328B55F015" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="19BE8463-413C-B597-0AE2-614869A3BCA8" name="Provincia PK">
+<createdBy>najc</createdBy>
+<createdTime>2022-01-13 15:08:48 UTC</createdTime>
+<ownerDesignName>salvamento</ownerDesignName>
+<engineerTo>
+<item key="27331082-5BC2-04D2-C68C-D5328B55F015" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BF7F0428-9784-A80A-996E-951EBE662666</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

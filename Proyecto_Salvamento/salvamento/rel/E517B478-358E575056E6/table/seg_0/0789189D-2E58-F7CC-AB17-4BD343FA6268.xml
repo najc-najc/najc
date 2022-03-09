@@ -1,0 +1,161 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0789189D-2E58-F7CC-AB17-4BD343FA6268" name="Actuaciones">
+<createdBy>najc</createdBy>
+<createdTime>2022-03-05 22:37:31 UTC</createdTime>
+<generatorID>3CE3F70C-FBDF-5A7A-F93D-BA9F95E32D3B</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_act" id="F2A18A3A-6790-2A3D-A977-A435FEEE7BBD">
+<createdBy>najc</createdBy>
+<createdTime>2022-03-05 22:37:31 UTC</createdTime>
+<generatorID>FFEFF268-6538-6E83-749D-97BFA186F092</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha_inicio" id="6D5B1620-782E-9960-CDE8-2FBFDC549C21">
+<createdBy>najc</createdBy>
+<createdTime>2022-03-05 22:37:31 UTC</createdTime>
+<generatorID>198A9991-D4DF-A3D4-BFDC-6A0339E7F17F</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha_fin" id="658BFEC7-09EE-9D28-8B21-9F544897CCD5">
+<createdBy>najc</createdBy>
+<createdTime>2022-03-05 22:37:31 UTC</createdTime>
+<generatorID>B1EA1DA4-8885-BBA1-CD61-DD74BE9383AA</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Localidad_id_Loc" id="41B771F6-4021-7930-51B1-CB51FDD5D8C3">
+<createdBy>najc</createdBy>
+<createdTime>2022-03-05 22:37:31 UTC</createdTime>
+<generatorID>26CF97F2-B580-0D4E-E6F1-750B3E8D2EAE</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D4A73C08-B37E-CEE8-EDC5-C488D1750593" referredColumn="AB7F9ADD-7E77-CEE3-89A5-A882E9998E43"/>
+</associations>
+</Column>
+<Column name="Persona_Rescatada_id_persona" id="7176AB73-0B3D-46FE-9B40-FCA1C208C983">
+<createdBy>najc</createdBy>
+<createdTime>2022-03-05 22:37:31 UTC</createdTime>
+<generatorID>72C763FE-D2C2-E5A7-1246-4F8BEBF0B4FB</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0222AE52-6E40-650C-B91D-2EE508B2C061" referredColumn="73802F36-4A53-44E1-02CB-E70963A85B07"/>
+</associations>
+</Column>
+<Column name="Cobertura" id="36340162-86BC-E696-D3A8-9FBAA3455F14">
+<createdBy>najc</createdBy>
+<createdTime>2022-03-05 22:37:31 UTC</createdTime>
+<generatorID>6BB0DF33-061F-6FE8-C8D3-7018608AE383</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Vehiculo_id_Veh" id="464408C8-BC09-AD2D-B8D4-0F716603D856">
+<createdBy>najc</createdBy>
+<createdTime>2022-03-05 22:37:31 UTC</createdTime>
+<generatorID>CED61989-5565-04BA-5F4C-D1426A914A22</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5A2D22B5-0956-9328-6D96-978C20B8DC9E" referredColumn="AE064242-2834-33C4-7D60-F6DF9FD92FA3"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C13B6746-19BF-BB7E-0B91-00ABF5ACC0E5" name="Actuaciones_PK">
+<createdBy>najc</createdBy>
+<createdTime>2022-03-05 22:37:31 UTC</createdTime>
+<generatorID>84E1E312-FFC3-2267-A69D-33B04960826C</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F2A18A3A-6790-2A3D-A977-A435FEEE7BBD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C8049249-8350-9A6E-332A-1035A5C1F50D" name="Actuaciones__IDX">
+<createdBy>najc</createdBy>
+<createdTime>2022-03-05 22:37:32 UTC</createdTime>
+<ownerDesignName>salvamento</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>1BB36594-36A6-19F5-4CBD-E7E721EDA02C</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="41B771F6-4021-7930-51B1-CB51FDD5D8C3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BEE06B04-5025-3BCB-0838-2DF429A4CE96" name="Actuaciones_Vehiculo_FK">
+<createdBy>najc</createdBy>
+<createdTime>2022-03-05 22:37:32 UTC</createdTime>
+<generatorID>B630A6EF-303E-0F0A-49B2-C7292ED66D04</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="464408C8-BC09-AD2D-B8D4-0F716603D856"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D7133739-9C8F-BB1E-20AB-9A24EEFA5B06" name="Actuaciones_Localidad_FK">
+<createdBy>najc</createdBy>
+<createdTime>2022-03-05 22:37:32 UTC</createdTime>
+<generatorID>1BB36594-36A6-19F5-4CBD-E7E721EDA02C</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="41B771F6-4021-7930-51B1-CB51FDD5D8C3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="07036782-7F0D-0800-C702-85F52F68A7F9" name="Actuaciones_Persona_Rescatada_FK">
+<createdBy>najc</createdBy>
+<createdTime>2022-03-05 22:37:32 UTC</createdTime>
+<generatorID>7895E175-7EA7-3946-2E22-007B2ADEFD2A</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7176AB73-0B3D-46FE-9B40-FCA1C208C983"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

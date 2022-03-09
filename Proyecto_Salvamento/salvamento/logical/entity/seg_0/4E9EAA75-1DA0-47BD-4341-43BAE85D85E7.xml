@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4E9EAA75-1DA0-47BD-4341-43BAE85D85E7" name="Vehiculo">
+<createdBy>najc</createdBy>
+<createdTime>2022-01-13 14:53:48 UTC</createdTime>
+<ownerDesignName>salvamento</ownerDesignName>
+<engineerTo>
+<item key="E517B478-201E-8123-A012-358E575056E6" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_Veh" id="21968735-13C2-666F-CA6E-2597BF6EB64B">
+<createdBy>najc</createdBy>
+<createdTime>2022-01-13 15:11:44 UTC</createdTime>
+<ownerDesignName>salvamento</ownerDesignName>
+<engineerTo>
+<item key="E517B478-201E-8123-A012-358E575056E6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Cod_veh" id="20E27F5D-1B86-7453-94A0-7CA348670846">
+<createdBy>najc</createdBy>
+<createdTime>2022-01-13 15:14:08 UTC</createdTime>
+<ownerDesignName>salvamento</ownerDesignName>
+<engineerTo>
+<item key="E517B478-201E-8123-A012-358E575056E6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre" id="2C0A50D3-E919-7279-5E4C-C35362805309">
+<createdBy>najc</createdBy>
+<createdTime>2022-01-13 15:14:56 UTC</createdTime>
+<ownerDesignName>salvamento</ownerDesignName>
+<engineerTo>
+<item key="E517B478-201E-8123-A012-358E575056E6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Capacidad_min" id="2AF25F9F-A1E4-F4BC-46BA-75F3F8CAB900">
+<createdBy>najc</createdBy>
+<createdTime>2022-01-13 15:15:47 UTC</createdTime>
+<ownerDesignName>salvamento</ownerDesignName>
+<engineerTo>
+<item key="E517B478-201E-8123-A012-358E575056E6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Capacidad_max" id="FC271400-43F2-13FE-B59D-E673FDC64CEC">
+<createdBy>najc</createdBy>
+<createdTime>2022-01-13 15:16:32 UTC</createdTime>
+<ownerDesignName>salvamento</ownerDesignName>
+<engineerTo>
+<item key="E517B478-201E-8123-A012-358E575056E6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Observaciones" id="390E6A0A-5B2D-23A6-7E04-56FCB8FBC12A">
+<createdBy>najc</createdBy>
+<createdTime>2022-01-13 15:18:07 UTC</createdTime>
+<ownerDesignName>salvamento</ownerDesignName>
+<engineerTo>
+<item key="E517B478-201E-8123-A012-358E575056E6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_Loc" id="096587CB-301F-67F8-6717-03C193EF6AFE">
+<createdBy>najc</createdBy>
+<createdTime>2022-01-13 15:25:03 UTC</createdTime>
+<generatorID>2621600B-780A-CE52-B9C0-55250C4641D0</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<engineerTo>
+<item key="E517B478-201E-8123-A012-358E575056E6" value="true"/>
+</engineerTo>
+<referedAttribute>716065C2-7BFC-FA0B-4B6D-63789A7B774A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="74D37AA3-DB0D-F048-A0B5-1A88161A5D7D" name="Vehiculo PK">
+<createdBy>najc</createdBy>
+<createdTime>2022-01-13 15:12:00 UTC</createdTime>
+<ownerDesignName>salvamento</ownerDesignName>
+<engineerTo>
+<item key="E517B478-201E-8123-A012-358E575056E6" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>21968735-13C2-666F-CA6E-2597BF6EB64B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

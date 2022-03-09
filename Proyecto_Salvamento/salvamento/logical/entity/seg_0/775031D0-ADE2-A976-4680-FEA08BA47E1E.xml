@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="775031D0-ADE2-A976-4680-FEA08BA47E1E" name="Inventario_total">
+<createdBy>najc</createdBy>
+<createdTime>2022-01-13 14:54:11 UTC</createdTime>
+<ownerDesignName>salvamento</ownerDesignName>
+<engineerTo>
+<item key="27331082-5BC2-04D2-C68C-D5328B55F015" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_inv_total" id="F9048F8D-B23C-2674-7BB9-0AD4520D2126">
+<createdBy>najc</createdBy>
+<createdTime>2022-01-13 15:25:39 UTC</createdTime>
+<ownerDesignName>salvamento</ownerDesignName>
+<engineerTo>
+<item key="27331082-5BC2-04D2-C68C-D5328B55F015" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_Veh" id="EC5FA69A-3197-AAC7-2339-C53E33264572">
+<createdBy>najc</createdBy>
+<createdTime>2022-01-13 15:27:39 UTC</createdTime>
+<generatorID>3A03C92E-9F3C-98AA-69E3-3718F8F4CAE1</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<engineerTo>
+<item key="27331082-5BC2-04D2-C68C-D5328B55F015" value="true"/>
+</engineerTo>
+<referedAttribute>21968735-13C2-666F-CA6E-2597BF6EB64B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Cant_veh" id="D60E2828-6916-8E73-7C71-776ED46648A9">
+<createdBy>najc</createdBy>
+<createdTime>2022-01-13 15:49:44 UTC</createdTime>
+<ownerDesignName>salvamento</ownerDesignName>
+<engineerTo>
+<item key="27331082-5BC2-04D2-C68C-D5328B55F015" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_material" id="FA242D4D-A0B0-6C8C-6986-94D20294D285">
+<createdBy>najc</createdBy>
+<createdTime>2022-01-13 15:27:48 UTC</createdTime>
+<generatorID>03F4BBF4-BA8C-5CD2-11AF-D73770D46AAF</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<engineerTo>
+<item key="27331082-5BC2-04D2-C68C-D5328B55F015" value="true"/>
+</engineerTo>
+<referedAttribute>197029D5-CB24-4E91-7A08-1898F1AA6A51</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Cantidad" id="756CF21B-8159-F2FC-DA16-6F2CFF9A78B3">
+<createdBy>najc</createdBy>
+<createdTime>2022-01-13 15:28:05 UTC</createdTime>
+<generatorID>03F4BBF4-BA8C-5CD2-11AF-D73770D46AAF</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<engineerTo>
+<item key="27331082-5BC2-04D2-C68C-D5328B55F015" value="true"/>
+</engineerTo>
+<referedAttribute>F556E9A5-D697-884F-C7A4-47C883892C03</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre_material" id="E18BE42C-E5B3-9CCB-275D-C360A2BD5CC6">
+<createdBy>najc</createdBy>
+<createdTime>2022-01-13 15:28:21 UTC</createdTime>
+<generatorID>03F4BBF4-BA8C-5CD2-11AF-D73770D46AAF</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<engineerTo>
+<item key="27331082-5BC2-04D2-C68C-D5328B55F015" value="true"/>
+</engineerTo>
+<referedAttribute>04425B41-E8AB-778E-F770-B01CBF198FEE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fecha_inv_tot" id="07F491D1-F087-8F27-2CA9-F120FDE9FE14">
+<createdBy>najc</createdBy>
+<createdTime>2022-01-13 15:28:47 UTC</createdTime>
+<ownerDesignName>salvamento</ownerDesignName>
+<engineerTo>
+<item key="27331082-5BC2-04D2-C68C-D5328B55F015" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="85E69C6A-40B5-B797-C6DC-985F147C780C" name="Inventario_total PK">
+<createdBy>najc</createdBy>
+<createdTime>2022-01-13 15:25:52 UTC</createdTime>
+<ownerDesignName>salvamento</ownerDesignName>
+<engineerTo>
+<item key="27331082-5BC2-04D2-C68C-D5328B55F015" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F9048F8D-B23C-2674-7BB9-0AD4520D2126</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7BB94570-1EED-A8F3-6F6A-726D5DF1827F" name="Inventario_Veh">
+<createdBy>najc</createdBy>
+<createdTime>2022-01-13 15:00:58 UTC</createdTime>
+<ownerDesignName>salvamento</ownerDesignName>
+<engineerTo>
+<item key="27331082-5BC2-04D2-C68C-D5328B55F015" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_Veh" id="946BE03F-4683-974F-B543-5C133555D6A6">
+<createdBy>najc</createdBy>
+<createdTime>2022-01-13 15:12:02 UTC</createdTime>
+<generatorID>16D5EDFB-12A0-DA2B-0BF4-E16055EA61FF</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<engineerTo>
+<item key="27331082-5BC2-04D2-C68C-D5328B55F015" value="true"/>
+</engineerTo>
+<referedAttribute>21968735-13C2-666F-CA6E-2597BF6EB64B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_material" id="8E586002-8B38-95EA-8E79-EB7C20062F22">
+<createdBy>najc</createdBy>
+<createdTime>2022-01-13 15:23:42 UTC</createdTime>
+<generatorID>F7F9F4FB-A568-E267-B28A-B897F94B6EC9</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<engineerTo>
+<item key="27331082-5BC2-04D2-C68C-D5328B55F015" value="true"/>
+</engineerTo>
+<referedAttribute>197029D5-CB24-4E91-7A08-1898F1AA6A51</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha" id="5F58C559-45D3-4378-C7F3-1731297A5C09">
+<createdBy>najc</createdBy>
+<createdTime>2022-01-13 15:22:08 UTC</createdTime>
+<ownerDesignName>salvamento</ownerDesignName>
+<engineerTo>
+<item key="27331082-5BC2-04D2-C68C-D5328B55F015" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Cantidad" id="11C4D744-F346-2B9D-C2A2-BDE613AA2FA0">
+<createdBy>najc</createdBy>
+<createdTime>2022-01-13 15:28:05 UTC</createdTime>
+<generatorID>F7F9F4FB-A568-E267-B28A-B897F94B6EC9</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<engineerTo>
+<item key="27331082-5BC2-04D2-C68C-D5328B55F015" value="true"/>
+</engineerTo>
+<referedAttribute>F556E9A5-D697-884F-C7A4-47C883892C03</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre_material" id="86AF6721-E184-74CC-BB5E-B209CC3CF44B">
+<createdBy>najc</createdBy>
+<createdTime>2022-01-13 15:28:21 UTC</createdTime>
+<generatorID>F7F9F4FB-A568-E267-B28A-B897F94B6EC9</generatorID>
+<ownerDesignName>salvamento</ownerDesignName>
+<engineerTo>
+<item key="27331082-5BC2-04D2-C68C-D5328B55F015" value="true"/>
+</engineerTo>
+<referedAttribute>04425B41-E8AB-778E-F770-B01CBF198FEE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8CD9458F-48D2-3338-69AE-E1992A7154E9" name="Inventario_Veh PK">
+<createdBy>najc</createdBy>
+<createdTime>2022-01-13 15:25:16 UTC</createdTime>
+<ownerDesignName>salvamento</ownerDesignName>
+<engineerTo>
+<item key="27331082-5BC2-04D2-C68C-D5328B55F015" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5F58C559-45D3-4378-C7F3-1731297A5C09</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
