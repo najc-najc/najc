@@ -228,3 +228,124 @@ go
 
 ---------------------------------------------------
 
+
+----TABLA TEMPORAL
+
+
+DROP TABLE IF EXISTS Departamento
+GO
+
+CREATE TABLE Departamento 
+(DeptID int identity Primary Key clustered,
+DeptName varchar(50),
+NumEmpleados numeric(4,0),
+DepCreado datetime2,
+SysStartTime datetime2 generated always as row start not null,   
+	SysEndTime datetime2 generated always as row end not null,
+	period for System_time (SysStartTime,SysEndTime) )
+	with (System_Versioning = ON (History_Table = dbo.Departamento_historico) 
+	)
+go
+
+INSERT INTO Departamento (DeptName,NumEmpleados)
+VALUES ('JEFES','45'),('CAMIONEROS','10'),('ADMINISTRATIVO','20')
+GO
+
+SELECT * FROM [dbo].[Departamento]
+GO
+SELECT * FROM [dbo].[Departamento_historico]
+GO
+
+insert into Departamento (DeptName,NumEmpleados)
+values ('limpieza',2),
+	('externos',50),
+	('practicas',800),
+	('seguridad',1000)
+GO
+
+update [dbo].[Departamento]
+	set [NumEmpleados] = 3
+	where [DeptName] = 'JEFES'
+GO
+
+SELECT * FROM [dbo].[Departamento]
+GO
+--1	JEFES	3	NULL	2022-03-10 19:24:11.6592578	9999-12-31 23:59:59.9999999
+--2	CAMIONEROS	10	NULL	2022-03-10 19:22:45.4666765	9999-12-31 23:59:59.9999999
+--3	ADMINISTRATIVO	20	NULL	2022-03-10 19:22:45.4666765	9999-12-31 23:59:59.9999999
+--4	limpieza	2	NULL	2022-03-10 19:23:08.6548672	9999-12-31 23:59:59.9999999
+--5	externos	50	NULL	2022-03-10 19:23:08.6548672	9999-12-31 23:59:59.9999999
+--6	practicas	800	NULL	2022-03-10 19:23:08.6548672	9999-12-31 23:59:59.9999999
+--7	seguridad	1000	NULL	2022-03-10 19:23:08.6548672	9999-12-31 23:59:59.9999999
+
+SELECT * FROM [dbo].[Departamento_historico]
+GO
+--1		JEFES	45	NULL	2022-03-10 19:22:45.4666765	2022-03-10 19:24:11.6592578
+
+
+update [dbo].[Departamento]
+	set [NumEmpleados] = 100
+	where [DeptName] = 'practicas'
+GO
+
+SELECT * FROM [dbo].[Departamento_historico]
+GO
+
+--1		JEFES	45	NULL	2022-03-10 19:22:45.4666765	2022-03-10 19:24:11.6592578
+--6		practicas	800	NULL	2022-03-10 19:23:08.6548672	2022-03-10 19:25:15.1024187
+
+select *
+from Departamento
+for system_time between '2022-03-10 19:22' and '2022-03-10 19:24'
+GO
+--2	CAMIONEROS	10	NULL	2022-03-10 19:22:45.4666765	9999-12-31 23:59:59.9999999
+--3	ADMINISTRATIVO	20	NULL	2022-03-10 19:22:45.4666765	9999-12-31 23:59:59.9999999
+--4	limpieza	2	NULL	2022-03-10 19:23:08.6548672	9999-12-31 23:59:59.9999999
+--5	externos	50	NULL	2022-03-10 19:23:08.6548672	9999-12-31 23:59:59.9999999
+--7	seguridad	1000	NULL	2022-03-10 19:23:08.6548672	9999-12-31 23:59:59.9999999
+--1	JEFES	45	NULL	2022-03-10 19:22:45.4666765	2022-03-10 19:24:11.6592578
+--6	practicas	800	NULL	2022-03-10 19:23:08.6548672	2022-03-10 19:25:15.1024187
+
+
+select *
+from Departamento
+for system_time contained in ('2022-03-10 19:20','2022-03-10 19:30')
+go
+
+--1	 JEFES		45	 NULL	2022-03-10 19:22:45.4666765	2022-03-10 19:24:11.6592578
+--6  practicas	800	 NULL	2022-03-10 19:23:08.6548672	2022-03-10 19:25:15.1024187
+
+select *
+from Departamento
+for system_time AS OF '2022-03-10 19:22:45.4666765' 
+GO
+--2	CAMIONEROS	10	NULL	2022-03-10 19:22:45.4666765	9999-12-31 23:59:59.9999999
+--3	ADMINISTRATIVO	20	NULL	2022-03-10 19:22:45.4666765	9999-12-31 23:59:59.9999999
+--1	JEFES	45	NULL	2022-03-10 19:22:45.4666765	2022-03-10 19:24:11.6592578
+
+update [dbo].[Departamento]
+	set [NumEmpleados] = 35
+	where [DeptName] = 'seguridad'
+GO
+
+SELECT * FROM [dbo].[Departamento_historico]
+GO
+--1	JEFES	45	NULL	2022-03-10 19:22:45.4666765	2022-03-10 19:24:11.6592578
+--6	practicas	800	NULL	2022-03-10 19:23:08.6548672	2022-03-10 19:25:15.1024187
+--7	seguridad	1000	NULL	2022-03-10 19:23:08.6548672	2022-03-10 19:32:49.1776315
+
+select *
+from Departamento
+for system_time from '2022-03-10 19:22:45.4666765' to '2022-03-10 19:35'
+go
+
+--1	JEFES	3	NULL	2022-03-10 19:24:11.6592578	9999-12-31 23:59:59.9999999
+--2	CAMIONEROS	10	NULL	2022-03-10 19:22:45.4666765	9999-12-31 23:59:59.9999999
+--3	ADMINISTRATIVO	20	NULL	2022-03-10 19:22:45.4666765	9999-12-31 23:59:59.9999999
+--4	limpieza	2	NULL	2022-03-10 19:23:08.6548672	9999-12-31 23:59:59.9999999
+--5	externos	50	NULL	2022-03-10 19:23:08.6548672	9999-12-31 23:59:59.9999999
+--6	practicas	100	NULL	2022-03-10 19:25:15.1024187	9999-12-31 23:59:59.9999999
+--7	seguridad	35	NULL	2022-03-10 19:32:49.1776315	9999-12-31 23:59:59.9999999
+--1	JEFES	45	NULL	2022-03-10 19:22:45.4666765	2022-03-10 19:24:11.6592578
+--6	practicas	800	NULL	2022-03-10 19:23:08.6548672	2022-03-10 19:25:15.1024187
+--7	seguridad	1000	NULL	2022-03-10 19:23:08.6548672	2022-03-10 19:32:49.1776315
